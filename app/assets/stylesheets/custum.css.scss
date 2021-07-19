@@ -39,6 +39,14 @@
 .btn-xlarg:hover {
     background-color: rgb(156, 158, 161);
 }
+.btn-xlarg-2:hover {
+    background-color: rgb(156, 158, 161);
+}
+.btn-xlarg-2 {
+    font-size: 1.7em;
+    background-color: burlywood;
+    border: yellow;
+}
 .footer {
     margin-top: 20px;
     border-top: 1px solid #eaeaea;
@@ -58,4 +66,7 @@
 .footer ul li {
     float: left;
     margin-left: 15px;
+}
+.nav-tabs {
+    border: none;
 }
