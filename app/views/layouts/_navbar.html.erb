@@ -13,13 +13,24 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><%= link_to "Articles", articles_path %> </li>
-        <li><%= link_to "New article", new_article_path %> </li>
+        <li><%= link_to "users", users_path %> </li>
+        <% if logged_in?%>
+          <li><%= link_to "New article", new_article_path %> </li>
+        <% end %>
       </ul>
+      <% if logged_in?%>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li><%= link_to "Edit Profile", edit_user_path(current_user)%></li>
+        <li><%= link_to  current_user.admin? ? "Admin Profile" : "Profile", user_path(current_user) %></li>
+        <li><%= link_to "Log out", logout_path, method: :delete %></li>
       </ul>
+      <% else %>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Log In", login_path%></li>
+        <li><%= link_to "Sign up", signup_path%></li>
+      </ul>
+      <% end %>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
