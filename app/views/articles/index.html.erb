@@ -1,2 +1,5 @@
 <h1 align="center">Articles</h1>
 <%= render 'article', object: @articles %>
+<div class="center">
+    <%= will_paginate @articles%>
+</div>
