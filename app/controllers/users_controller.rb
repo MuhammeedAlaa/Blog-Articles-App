@@ -18,10 +18,10 @@ class UsersController < ApplicationController
     def edit 
     end
     def show 
-        @user_articles = @user.articles.paginate(page: params[:page], per_page: 2)
+        @user_articles = @user.articles.paginate(page: params[:page], per_page: params[:limit])
     end
     def index 
-        @users = User.paginate(page: params[:page], per_page: 2)
+        @users = User.paginate(page: params[:page], per_page: params[:limit])
     end
     def update
         if @user.update(user_params)
