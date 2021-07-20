@@ -35,6 +35,9 @@ class UsersController < ApplicationController
         @user = User.find(params[:id])
         @user.destroy
         flash[:danger] = "#{@user.username} is succesfully deleted"
+        if current_user == @user
+            session[:user_id] = nil
+        end
         redirect_to users_path
     end
     
