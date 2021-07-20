@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    before_action :set_user, only: [:edit]
+    before_action :set_user, only: [:edit, :update, :show]
     def new        
         @user = User.new
     end
@@ -14,7 +14,11 @@ class UsersController < ApplicationController
     end
     def edit 
     end
-    
+    def show 
+    end
+    def index 
+        @users = User.all
+    end
     def update
         if @user.update(user_params)
             flash[:success] = "Your info was succesfully updated"    
