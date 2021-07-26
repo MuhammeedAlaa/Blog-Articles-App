@@ -113,3 +113,12 @@ body {
     list-style: none;
     margin-left: 0 ;
 }
+.badge {
+    background-color: antiquewhite;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+    .input-checkbox input {
+        width: auto !important;
+    }
+}
