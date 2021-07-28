@@ -1,24 +1,51 @@
-# README
+<p align="center"> 
+    <img src="app/assets/images/favicon.ico" width="700"/>
+</p>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Table of contents
 
-Things you may want to cover:
+- [Description](#Description)
+- [Screenshots](#Screenshots)
+- [Technologies](#Technologies)
+- [Contributers](#Contributers)
 
-* Ruby version
+# Description
 
-* System dependencies
+Alaa-Blog is an app that has users that can sign in and sign up and create thier aricles in different categories.
 
-* Configuration
+# 📷 Screenshots
 
-* Database creation
+![Home](./Screenshots/Home.png)
 
-* Database initialization
+## 🔑 User Management
 
-* How to run the test suite
+![Login](./ScreenShots/login.png)
+![SignUp](./ScreenShots/SignUp.png)
 
-* Services (job queues, cache servers, search engines, etc.)
+## 🙍‍♂️ User
 
-* Deployment instructions
+![Edit](./ScreenShots/Edit.png)
+![UserProfile](./ScreenShots/Profile.png)
+![CreateArticle](./ScreenShots/CreateArticle.png)
+![EditArticle](./ScreenShots/EditArticle.png)
 
-* ...
+## 🔐 Admin panel
+
+![AdminEditDeleteArticles](./ScreenShots/AdminEdit.png)
+![CreateCategory](./ScreenShots/CreateCategory.png)
+![EditCategory](./ScreenShots/EditCategory.png)
+
+# Technologies
+
+## Frontend
+
+- Embedded ruby
+
+## Backend
+
+- Ruby on rails
+- SQL
+
+# Contributers
+
+- [Muhammed Alaa](https://github.com/MuhammeedAlaa)
