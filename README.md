@@ -15,7 +15,7 @@ Alaa-Blog is an app that has users that can sign in and sign up and create thier
 
 # 📷 Screenshots
 
-![Home](./Screenshots/Home.png)
+![Home](./ScreenShots/Home.png)
 
 ## 🔑 User Management
 
